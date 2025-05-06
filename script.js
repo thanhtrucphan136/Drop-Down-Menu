@@ -1,18 +1,20 @@
-document.addEventListener("click", (e) => {
-  const isDropdownButton = e.target.matches("[data-dropdown-button]");
-  if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return;
+const dropdownBtn = document.querySelector(".dropdown-btn");
+const dropdown = document.querySelector(".dropdown-options");
 
-  let currentDropdown;
+//open dropdown when hovering the button
+dropdownBtn.addEventListener("mouseenter", () => {
+  dropdown.classList.add("dropdown-active");
+});
 
-  if (isDropdownButton) {
-    currentDropdown = e.target.closest("[data-dropdown]");
-    console.log(currentDropdown);
-    currentDropdown.classList.toggle("active");
-  }
+dropdown.addEventListener("mouseenter", () => {
+  dropdown.classList.add("dropdown-active");
+});
 
-  document.querySelectorAll("[data-dropdown].active").forEach((dropdown) => {
-    if (dropdown === currentDropdown) return;
-    dropdown.classList.remove("active");
-    console.log(dropdown);
-  });
+//close the dropdown if not hovering
+dropdownBtn.addEventListener("mouseleave", () => {
+  dropdown.classList.remove("dropdown-active");
+});
+
+dropdown.addEventListener("mouseleave", () => {
+  dropdown.classList.remove("dropdown-active");
 });
