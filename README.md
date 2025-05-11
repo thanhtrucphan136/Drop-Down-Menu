@@ -1,18 +1,18 @@
 # Drop-Down-Menu
 
-## Demo: https://thanhtrucphan136.github.io/Drop-Down-Menu/
+## [Demo] (https://thanhtrucphan136.github.io/Drop-Down-Menu/)
 
-## NPM Package: https://www.npmjs.com/package/@trucphan136/drop-down-menu
+## [NPM Package:] (https://www.npmjs.com/package/@trucphan136/drop-down-menu)
 
 ## To install the package via npm
 
     npm i @trucphan136/drop-down-menu
 
-### Usage
+### Detail Instruction Usage
 
-**In your HTML file, you can find the necessary HTML structure and classes in the dist/index.html file within the package.**
+**1. HTML structure**
 
-Example:
+Example HTML code (detailed example can also be found in dropdown.html):
 
     <div class="dropdown">
         <div class="dropdown-btn">
@@ -26,6 +26,10 @@ Example:
         </div>
     </div>
 
-**After including the HTML structure, link the JavaScript file by adding the following <script> tag before the closing </body> tag in your HTML file:**
+**2. Import the function and CSS into your script**
 
-    <script defer src="node_modules/@trucphan136/drop-down-menu/dist/main.js"></script>
+    import dropdown from "@trucphan136/drop-down-menu"; // Import the dropdown function
+    import "@trucphan136/drop-down-menu/styles.css"; // Import the styles
+
+    dropdown(); // Initialize the dropdown
+
