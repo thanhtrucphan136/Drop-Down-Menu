@@ -4,11 +4,11 @@
 
 ## [NPM Package](https://www.npmjs.com/package/@trucphan136/drop-down-menu)
 
-## To install the package via npm
+## Install the package via npm
 
     npm i @trucphan136/drop-down-menu
 
-### Detail Instruction Usage
+### Usage
 
 **1. HTML structure**
 
