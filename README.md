@@ -1,8 +1,8 @@
 # Drop-Down-Menu
 
-## [Demo] (https://thanhtrucphan136.github.io/Drop-Down-Menu/)
+## [Demo](https://thanhtrucphan136.github.io/Drop-Down-Menu/)
 
-## [NPM Package:] (https://www.npmjs.com/package/@trucphan136/drop-down-menu)
+## [NPM Package:](https://www.npmjs.com/package/@trucphan136/drop-down-menu)
 
 ## To install the package via npm
 
